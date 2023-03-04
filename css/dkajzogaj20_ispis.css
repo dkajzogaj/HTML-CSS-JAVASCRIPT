@@ -1,0 +1,73 @@
+@media print{
+    header, nav, footer{
+        display: none;
+    }
+
+    html, body{
+        color: black;
+        background-color: white;
+    }
+
+    img{
+        filter: grayscale(100%);
+    }
+
+    /*--------------OBRAZAC.HTML--------------*/
+    form{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .TC1_obrazac{
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .TC2_obrazac{
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        grid-column: 2;
+        grid-row: 1;
+    }
+    [type="submit"], [type="reset"]{
+        display: none;
+    }
+
+    /*--------------MULTIMEDIJA.HTML--------------*/
+    #videi, #audio{
+        display: none;
+    }
+
+    .slike_multimedija{
+        width: 100%;
+    }
+
+    .naslovSlike_ispis{
+        text-align: center;
+        max-width: 100%;
+        min-width: 100%;
+        font-size: 1.5em;
+        padding-left: 42%;
+        padding-right: 42%;
+        text-align: justify;
+    }
+    /*--------------KREATIVNA.HTML--------------*/
+
+    #na-vrh1, #podnozje-za-ispis{
+        display: none;
+    }
+
+    /*--------------POPIS.HTML--------------*/
+    table, th, td, thead{
+    border: 1px solid black;
+}
+    /*--------------INDEX.HTML--------------*/
+    #caption_index, #ZaOverflow_INDEX{
+        color: black;
+    }
+
+}

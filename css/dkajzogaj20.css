@@ -1,0 +1,214 @@
+/*--------------INDEX.HTML--------------*/
+*{
+    box-sizing: border-box;
+} /*Univerzalni*/
+
+html{
+    background-color: gray;
+}
+
+header{
+    background-color: lightblue;
+    padding: 6px; /*Model kutije*/
+    width: auto;
+    border: 2px;
+    margin: 2px;
+    text-align: center;
+    margin: 0;
+} /*Implicitni*/
+
+body{
+    margin: 0;
+}
+
+main{
+    background-color: grey;
+    margin: 0;
+} /*Implicitni*/
+
+[href="#"]{
+    float: right;
+    text-decoration: none;
+    color:blue;
+    border: 3px solid black;
+}
+[href="./prijava.html"]{
+    float: right;
+    text-decoration: none;
+    color:blue;
+    border: 3px solid black;
+}
+
+[href="../prijava.html"]{
+    float: right;
+    text-decoration: none;
+    color:blue;
+    border: 3px solid black;
+}
+
+#forma2,#can{
+    text-align: center;
+    position: relative;
+    float: left;
+    padding: 15px 15px;
+}
+
+nav{
+    background-color: gray;
+    padding: 10px 20px;
+    margin: 0;
+    
+}
+
+.gl_navigacija a{
+    color: white;
+    text-decoration: none;
+    padding: 1px 1px;
+}
+
+.gl_navigacija a:hover{
+    background-color:aqua ;
+    padding: 1px 1px;
+}
+
+footer{
+    background-color: lightblue;
+    padding: 1px; /*Model kutije*/
+    width: auto;
+    border: 2px;
+    margin: 2px;
+    text-align: center;
+} /*Implicitni*/
+
+#glavni_naslov{
+    font-family: 'Times New Roman', Times, serif;
+} /*Jednoznačni*/
+
+.slika_zaglavlje{
+    border: 5px solid darkblue;
+} /*Eksplicitni*/
+
+[lang="en"]{
+    border:5px solid aqua;
+} /*Selektor atributa*/
+
+h1#glavni_naslov{
+    text-align: center;
+} /*Spojeni selektor*/
+
+header > hr{ /*Kompleksni*/
+    display: none;
+}
+
+img ~ figcaption{ /*Kompleksni ~*/
+   color: aqua;
+}
+
+body p{ /*Kompleksni razmak*/
+    color: aqua;
+}
+
+body p:hover{ /*Pseudoklasa 1*/
+    background-color: white;
+}
+
+[href = "#"]:visited{ /*Pseudoklasa 2*/
+    background-color: black;
+    color: black;
+}
+
+#glavna_navigacija a:active{ /*Pseudoklasa 3*/
+    color: yellow;
+}
+
+#ZaOverflow_INDEX{
+    overflow: auto;
+    width: 10%;
+    height: 120px;
+    margin-left: 30px;
+   
+}
+
+/*--------------OOBRAZAC.HTML--------------*/
+
+#resetiraj, #posalji{
+    position: relative;
+    top: -220px;
+    left: 300px;
+}
+
+.TC1_obrazac{
+    float:left;
+    position: relative;
+    margin-top: 3px;
+}
+
+.TC2_obrazac{
+    position: relative;
+    margin-top: 3px;
+    margin-bottom: 30px;
+}
+
+.obrazac_footer{
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    top: auto;
+}
+
+.naslov_legende{
+    font-weight: bold;
+    color: aqua;
+}
+
+/*--------------MULTIMEDIJA.HTML--------------*/
+
+.slike_multimedija{
+    display: inline;
+    width: 200px;
+    height: 200px;
+}
+
+.slike_multimedija:hover{
+    width: 450px;
+    height: 450px;
+    transition: 1s;
+}
+
+.videi_multimedija{
+    width: 200px;
+    height: 200px;
+}
+
+/*--------------POPIS.HTML--------------*/
+
+.grid{
+    display: grid;
+    grid-template-columns: auto;
+}
+
+table, th, td, thead{
+    border: 1px solid aqua;
+}
+
+.parni_redovi_POPIS{
+    background-color: aqua;
+}
+
+#PrekoRedka_POPIS1:hover, #PrekoRedka_POPIS2:hover, #PrekoRedka_POPIS3:hover, #PrekoRedka_POPIS4:hover, #PrekoRedka_POPIS5:hover{
+    background-color: blueviolet;
+    color: azure;
+}
+
+#Pomoc_POPIS1:hover, #Pomoc_POPIS2:hover{
+    background-color: blueviolet;
+    color: azure;
+}
+
+#PrekoRedka_POPIS2:hover + #Pomoc_POPIS1, #PrekoRedka_POPIS5:hover + #Pomoc_POPIS2{ /*Kombinator +*/
+    background-color: blueviolet;
+    color: azure;
+}
+
+/*--------------KREATIVNA.HTML--------------*/
+/*--ZA KREATIVNU KORIŠTEN BOOTSTRAP--*/

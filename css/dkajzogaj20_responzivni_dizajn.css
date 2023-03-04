@@ -1,0 +1,84 @@
+@media all and (min-width:481px){
+    .grid{
+        overflow-x: auto;
+        text-overflow: inherit;
+        table-layout: fixed;
+        word-wrap: break-word;
+        word-break: break-all;
+    }
+    html, body{
+        overflow-x: hidden;
+    }
+    #resetiraj,#posalji{
+        position: relative;
+        top: -55px;
+    }
+}
+
+@media all and (max-width:480px){
+    html, body{
+        overflow-x: hidden;
+    }
+
+    .gl_navigacija a{
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .podnozje_div{
+        justify-content: center;
+    }
+
+    /*Popis*/
+    .grid{
+        display: grid;
+    }
+
+    .Kolona2{
+        margin-top: 20px;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    table.Kolona1{
+        border-spacing: 0;
+        border-collapse: collapse;
+        width: auto;
+    }
+    
+    table.Kolona1 th:nth-child(3), td:nth-child(3), th:nth-child(4), td:nth-child(4), th:nth-child(5), td:nth-child(5), th:nth-child(6), td:nth-child(6), th:nth-child(7), td:nth-child(7), .Nevidljiv1, .Nevidljiv2{
+        display: none;
+      }
+
+    /*Multimedija*/
+    .slike_multimedija:hover{
+        width: 210px;
+        height: 210px;
+        transition: 1s;
+    }
+
+    /*Index*/
+    .slika_zaglavlje, .slika_ind{
+        width: 100px;
+        height: 100px;
+    }
+
+    /*Obrazac*/
+   #obrazac_footer{
+       position: relative;
+   }
+   #resetiraj,#posalji{
+       position: relative;
+       top: -25px;
+   }
+
+   /*Autor*/
+   .slika_autor{
+        width: 100px;
+        height: 100px;
+   }
+}

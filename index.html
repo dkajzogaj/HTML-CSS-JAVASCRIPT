@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <title>Tajni dnevnik Adriana Molea</title>
+    <meta charset="utf-8">
+    <meta name="author:" content="David Kajzogaj">
+    <meta name="keywords" content="nav,body,head">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/dkajzogaj20.css" rel="stylesheet" type="text/css">
+    <link href="./css/dkajzogaj20_responzivni_dizajn.css" rel="stylesheet" type="text/css">
+    <link href="./css/dkajzogaj20_ispis.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="#">
+</head>
+<body>
+    <header id="na-vrh">
+        <a href="index.html">
+            <img class="slika_zaglavlje" width=150 height=150 src="./Materijali/Logo.jpg" alt="logo">
+            </a>
+        <a id="odj" href="#">Odjava</a>
+        <a id="prij" href="./prijava.html">Prijava</a>
+        <noscript>
+            <dialog>
+                Vaš Web preglednik ne podržava JavaScript.
+            </dialog>
+        </noscript>
+        <h1 id="glavni_naslov">Tajni dnevnik Adriana Molea</h1>
+        <button id="tipka">Gumb</button>
+        <p>Izbornik:</p>
+        <p id="imeKor"></p>
+        <p id="vriKor"></p>
+        <nav id="glavna_navigacija" class="gl_navigacija">
+            <div id="boja">
+            <a href="index.html">Tajni dnevnik Adriana Molea</a>
+            <a href="obrazac.html">Obrazac</a>
+            <a href="./Ostalo/multimedija.html">Multimedija</a>
+            <a href="./Ostalo/o_autoru.html"> O autoru</a>
+            <a href="./Ostalo/kreativna.html">Kreativna </a>
+            <a href="./Podaci/popis.html">Popis</a>
+            </div>
+        </nav>
+        <hr>
+    </header>
+    <main id="glavno" class="canvas">
+        <ul>
+            <li>
+                Povećanje-smanjivanje sadržaja: 
+                <br>
+                <br>
+                Na stranici o_autoru.html, animacija se aktivira na način da se prelaskom miša na ime autora, ime poveća, a zatim smanji.
+                Poveznica na stranicu o_autoru.html:  <a href="./Ostalo/o_autoru.html#povecanje">Povećanje-smanjivanje</a>
+                <br>
+                <br>
+            </li>
+            <li>
+                Rotiranje sadržaja:
+                <br>
+                <br>
+                Na stranici o_autoru.html, animacija se aktivira na način da se prelaskom miša preko slike, slika rotira za 30 stupnjeva.
+                Poveznica na stranicu o_autoru.html: <a href="./Ostalo/o_autoru.html#rotacija">Rotiranje sadržaja</a>
+                <br>
+                <br>
+            </li>
+            <li>
+                Animacija po želji:
+                <br>
+                <br>
+                Na stranici o_autoru.html, animacija se aktivira na način da se prelaskom miša preko citata boja teksta mijenja iz plave u crnu.
+                Poveznica na stranicu o_autoru.html: <a href="./Ostalo/o_autoru.html#vlastita">Animacija po želji</a>
+            </li>
+        </ul>
+        <div id="can">
+        <button id="tipka2">Odaberi</button>
+        </div>
+        <template id="temp">
+            <canvas id="canvas" width=200 height=100 style="border:1px solid #000000;"></canvas>
+        </template>
+        
+        <form id="forma2" name="canvas" novalidate>
+            <label for="bojastupaca">Boja stupaca:</label>
+            <input type="color" id="bojastupaca" name="boje">
+            <br>
+            <br>
+            <label for="brstupaca">Količina stupaca:</label>
+            <input type="number" id="brstupaca" value="1" min="1" max="3">
+            <br>
+            <br>
+            <button id="posalji4">Promjeni</button>
+        </form>
+    </main>
+    <br>
+    <footer id="boja4">
+        <div class="podnozje_div">
+            <a rel="license" href="https://creativecommons.org/licenses/">
+            <img alt="Creative commons" src="./Materijali/88x31.png"> </a>
+            &copy; 2022. <a href="mailto:dkajzogaj20@foi.hr">David Kajzogaj</a>
+            <a href="http://validator.w3.org/check?uri=https://spider.foi.hr/OWT/2022/zadaca_03/dkajzogaj20/index.html" target="_BLANK"><img src="https://spider.foi.hr/OWT/materijali/slike/HTML5.png" alt="HTML 5" width=50 height=50></a>
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://spider.foi.hr/OWT/2022/zadaca_03/dkajzogaj20/css/dkajzogaj20.css" target="_BLANK"><img src="https://spider.foi.hr/OWT/materijali/slike/CSS3.png" alt="glavni css" width=50 height=50></a> dkajzogaj20.css
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://spider.foi.hr/OWT/2022/zadaca_03/dkajzogaj20/css/dkajzogaj20_responzivni_dizajn.css" target="_BLANK"><img src="https://spider.foi.hr/OWT/materijali/slike/CSS3.png" alt="responzivni css" width=50 height=50></a> dkajzogaj20_responzivni_dizajn.css
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://spider.foi.hr/OWT/2022/zadaca_03/dkajzogaj20/css/dkajzogaj20_ispis.css" target="_BLANK"><img src="https://spider.foi.hr/OWT/materijali/slike/CSS3.png" alt="ispis css" width=50 height=50></a> dkajzogaj20_ispis.css
+            <a href="#na-vrh"><img src="./Materijali/arrow-up-01-512.webp" alt="Vrh" width=50 height=50></a>
+        </div>
+    </footer>
+    <script src="./js/dkajzogaj20.js"></script>  
+</body>
+</html>

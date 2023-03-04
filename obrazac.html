@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <title>Obrazac</title>
+    <meta charset="utf-8">
+    <meta name="author:" content="David Kajzogaj">
+    <meta name="keywords" content="nav,body,head">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/dkajzogaj20.css" rel="stylesheet" type="text/css">
+    <link href="./css/dkajzogaj20_responzivni_dizajn.css" rel="stylesheet" type="text/css">
+    <link href="./css/dkajzogaj20_ispis.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="#">
+</head>
+
+<body>
+    <header id="na-vrh">
+        <a href="index.html">
+            <img class="slika_zaglavlje" width=150 height=150 src="./Materijali/Logo.jpg" alt="logo">
+            </a>
+        <a id="odj" href="#">Odjava</a>
+        <a id="prij" href="./prijava.html">Prijava</a>
+        <noscript>
+            <dialog>
+                Vaš Web preglednik ne podržava JavaScript.
+            </dialog>
+        </noscript>
+        <h1>Obrazac</h1>
+        <button id="tipka">Gumb</button>
+        <p>Izbornik:</p>
+        <p id="imeKor"></p>
+        <p id="vriKor"></p>
+        <nav id="glavna_navigacija" class="gl_navigacija">
+            <div id="boja">
+            <a href="index.html">Tajni dnevnik Adriana Molea</a>
+            <a href="obrazac.html">Obrazac</a>
+            <a href="./Ostalo/multimedija.html">Multimedija</a>
+            <a href="./Ostalo/o_autoru.html"> O autoru</a>
+            <a href="./Ostalo/kreativna.html">Kreativna </a>
+            <a href="./Podaci/popis.html">Popis</a>
+            </div>
+        </nav>
+    </header>
+    <br>
+    <main id="glavno">
+        <form id="forma" action="https://spider.foi.hr/OWT/materijali/ispis_forme.php" method="post" novalidate>
+            <fieldset id="field1" class="TC1_obrazac">
+                <legend class="naslov_legende">Narudžba:</legend>
+                <label id="knjizara">Odaberite knjižaru:</label>
+                <br>
+                <input type="radio" name="knjižara" value="Superknjižara" id="super">
+                <label id="s1" for="super">Superknjižara</label>
+                <input type="radio" name="knjižara" value="KnjižaraLjevak" id="ljevak">
+                <label id="s2" for="ljevak">Knjižara Ljevak</label>
+                <input type="radio" name="knjižara" value="Arkadija" id="arkadija">
+                <label id="s3" for="arkadija">Arkadija</label>
+                <input type="radio" name="knjižara" value="Znanje" id="znanje">
+                <label id="s4" for="znanje">Znanje</label>
+                <br>
+                <br>
+                <label id="kolic" for="kol">Količina:</label>
+                <input type="number" id="kol">
+                <br>
+                <br>
+                <label for="url">Unesite URL: </label>
+                <input type="url" name="url" id="url">
+                <br>
+                <br>
+                <label id="odabir" for="knjige">Odaberite knjige:</label>
+                <br>
+                <select id="knjige" multiple>
+                    <optgroup label="Romani">
+                        <option value="Kovčeg">H.M: Kovčeg</option>
+                        <option value="M. Amerikanac">G.G: Mirni Amerikanac</option>
+                        <option value="Junak našeg doba">M.Lj: Junak našeg doba</option>
+                        <option value="Morelov izum">A.B.C: Morelov izum</option>
+                        <option value="Cesta">C.M.: Cesta</option>
+                    </optgroup>
+                    <optgroup label="Novele">
+                        <option value="Alkar">D.Š: Alkar</option>
+                        <option value="Muljika">D.Š: Muljika</option>
+                        <option value="Mrkodol">D.Š: Mrkodol</option>
+                        <option value="Duga">D.Š: Duga</option>
+                        <option value="Šah">S.Z: Novela o šahu</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+            <fieldset id="field2" class="TC2_obrazac">
+                <legend class="naslov_legende">Pošta:</legend>
+                <label id="datumtekst" for="datumivrijeme">Datum i vrijeme dostave pošiljke:</label>
+                <input type="text" id="datumivrijeme" value="">
+                <br>
+                <br>
+                <label id="imetekst" for="ime">Ime i prezime:</label>
+                <input type="text" value="" name="iip" id="ime">
+                <br>
+                <br>
+                <label id="višelintext" for="vištext">Unesite posebne zahtjeve pošiljke:</label><br>
+                <textarea id="vištext" cols="40" rows="10" maxlength="1000"></textarea>
+                <br>
+                <br>
+                <label id="mobitel" for="mob">Mobitel:</label>
+                <input type="tel" id="mob" name="mob">
+                <br>
+                <br>
+                <label id="mailtext" for="mail">Vaša E-pošta:</label>
+                <input type="email" id="mail">
+                <br>
+                <br>
+                <label id="loktext" for="mjesto">Vaša lokacija:</label>
+                <input type="search" id="mjesto">
+                <br>
+                <br>
+            </fieldset>
+                <input type="reset" name="res" value="Resetiraj" id="resetiraj">
+                <input type="submit" name="sub" value="Posalji" id="posalji"> 
+        </form>
+    
+    </main>
+    <br>
+    <footer class="obrazac_footer" id="boja4">
+        <div class="podnozje_div">
+            <a rel="license" href="https://creativecommons.org/licenses/">
+            <img alt="Creative commons" src="./Materijali/88x31.png"> </a>
+            &copy; 2022. <a href="mailto:dkajzogaj20@foi.hr">David Kajzogaj</a>
+            <a href="http://validator.w3.org/check?uri=https://spider.foi.hr/OWT/2022/zadaca_03/dkajzogaj20/obrazac.html" target="_BLANK"><img src="https://spider.foi.hr/OWT/materijali/slike/HTML5.png" alt="HTML 5" width=50 height=50></a>
+            <a href="#na-vrh"><img src="./Materijali/arrow-up-01-512.webp" alt="Vrh" width=50 height=50></a>
+        </div>
+    </footer>
+    <script src="./js/dkajzogaj20.js"></script>
+</body>
+
+
+</html>
